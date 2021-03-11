@@ -1,0 +1,9 @@
+version: "3"
+services:
+  explorer:
+    image: alethio/ethereum-lite-explorer:v1.0.0-beta.10
+    container_name: explorer
+    environment:
+      - APP_NODE_URL=<ENTER_YOUR_URL>
+    ports:
+      - 8080:80/tcp

@@ -1,0 +1,13 @@
+[Unit]
+Description=alethio ethereum explorer
+Requires=docker.service
+After=docker.service
+
+[Service]
+Type=oneshot
+ExecStart=<path>/alethio-eth-explorer/eth-explorer.sh resume
+ExecStop=<path>/alethio-eth-explorer/eth-explorer.sh pause
+RemainAfterExit=true
+
+[Install]
+WantedBy=multi-user.target
