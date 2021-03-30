@@ -6,4 +6,4 @@ services:
     environment:
       - APP_NODE_URL=<ENTER_YOUR_URL>
     ports:
-      - 8080:80/tcp
+      - 127.0.0.1:8080:80/tcp
